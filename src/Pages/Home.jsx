@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { getRecipes } from "../Services/recipes.js";
 import "./Home.css";
+import RecipeCard from "../Componenets/RecipeCard.jsx";
 
 function Home() {
   const [recipes, setRecipes] = useState([]);
@@ -20,10 +21,10 @@ function Home() {
 
   return (
     <div className="main-page">
-      <h1>Cooking Collective</h1>
+      <h1 className="main-title">Cooking Collective</h1>
       <div className="recipes">
         {recipes.map((recipe)=>(
-            <h2>{recipe.name}</h2>
+            <RecipeCard recipe={recipe} key={recipe._id}/>
         ))}
       </div>
     </div>
