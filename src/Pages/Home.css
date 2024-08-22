@@ -8,6 +8,8 @@
 .main-title{
     margin: 0;
     padding: 30px;
+    font-size: 60px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
 }
 
 .recipes{
@@ -21,6 +23,11 @@
     margin: 0 30px;
     padding: 20px;
     height: 80%;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 15px;
+  
+}
+
+.recipes::-webkit-scrollbar{
+    display: none;
 }

@@ -6,4 +6,35 @@
     border-radius: 10px;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 5px solid darkgray;
+    align-items: end;
+}
+.recipe-card:hover{
+    border: 5px solid white;
+}
+
+.recipe-name{
+    background-color: rgb(0,0,0, .6);
+    color: white;
+    width: 300px;
+}
+
+.recipe-modal-popup{
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    width: 75vw;
+    border: 2px solid darkgray;
+    border-radius: 15px;
+    padding: 15px;
+    overflow: auto;
+    background-color: antiquewhite;
+}
+
+.recipe-modal-popup::-webkit-scrollbar{
+    display: none;
+}
+
+.recipe-modal-image{
+    width: 300px;
 }
