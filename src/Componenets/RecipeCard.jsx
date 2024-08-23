@@ -42,8 +42,10 @@ function RecipeCard({ recipe }) {
             ))}
           </ul>
         </div>
+        <div className="recipe-modal-instruction-section">
         <h3>Instructions</h3>
         <p className="recipe-instructions">{recipe.instructions}</p>
+        </div>
         <div className="recipe-modal-buttons">
         {recipe.video && (
           <button
