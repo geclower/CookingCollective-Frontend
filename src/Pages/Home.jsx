@@ -1,8 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { getRecipes, getRecipesByMealType, getRecipesByFoodType } from "../Services/recipes.js";
+import {
+  getRecipes,
+  getRecipesByMealType,
+  getRecipesByFoodType,
+} from "../Services/recipes.js";
 import "./Home.css";
-import RecipeCard from "../Componenets/RecipeCard.jsx";
+import RecipeCard from "../Componenets/RecipeCard/RecipeCard.jsx";
+import NewRecipe from "../Componenets/NewRecipe/NewRecipe.jsx";
 
 function Home() {
   const [recipes, setRecipes] = useState([]);
@@ -49,21 +54,13 @@ function Home() {
   };
 
   const reloadPage = () => {
-    window.location.reload()
-  }
-
-  // const fetchRecipes = async () => {
-  //   try {
-  //     const recipesData = await getRecipes();
-  //     setRecipes(recipesData);
-  //   } catch {
-  //     console.log("Cannot retrieve recipes.");
-  //   }
-  // };
+    window.location.reload();
+  };
 
   return (
     <div className="main-page">
       <h1 className="main-title">Cooking Collective</h1>
+      <div className="searches">
       <div className="meal-search">
         <label>Choose your course:</label>
         <select className="meal-select" onChange={handleMealSelect}>
@@ -104,12 +101,25 @@ function Home() {
           onClick={fetchFoodRecipes}
         />
       </div>
-      <button className="reset-btn" onClick={reloadPage}>Reset</button>
+      </div>
+      <button className="reset-btn" onClick={reloadPage}>
+        RESET
+      </button>
+   
       <div className="recipes">
+      {recipes.length === 0 && (
+          <div className="recipe-error-response">
+            <h2>No recipes match your preference.</h2>
+            <br></br>
+            <h3>Try another option or add your own!</h3>
+          </div>
+        )}
         {recipes.map((recipe) => (
           <RecipeCard recipe={recipe} key={recipe._id} />
         ))}
+        
       </div>
+      <NewRecipe/>
     </div>
   );
 }

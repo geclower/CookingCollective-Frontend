@@ -1,0 +1,32 @@
+/* button */
+.add-recipe-btn{
+    align-items: center;
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+  }
+  
+  .add-recipe-btn:hover{
+    background-color: #fc894d;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+  
+  
+
+/* modal */
+.agatha-gif{
+    width: 40%;
+}

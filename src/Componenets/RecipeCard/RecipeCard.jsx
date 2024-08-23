@@ -2,7 +2,6 @@ import React from "react";
 import "./RecipeCard.css";
 import { useState } from "react";
 import Modal from "react-modal";
-import { Link } from "react-router-dom";
 
 function RecipeCard({ recipe }) {
   const [modalIsOpen, setIsOpen] = useState(false);
