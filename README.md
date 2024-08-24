@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+## Cooking Collective
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview
 
-## Available Scripts
+Join the Cooking Collective!
 
-In the project directory, you can run:
+Cooking Collective is a site where cooking enthusiests can find new recipes and share their culinary creations.
 
-### `npm start`
+![alt text](Images/CCMainPage.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Functionality
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+With the Cooking Collective you can browse through a wide range of recipes spanning different countries with varying main ingredients. Each recipe is fully available and soon you will be able to add your own recipes as well!
 
-### `npm test`
+See below for how these pages look.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Filter Function:
 
-### `npm run build`
+You can filter either by the course you are looking to prepare or by the main ingredient of the dish.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![alt text](Images/CCFilter2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![alt text](Images/CCFilter1.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Recipe:
 
-### `npm run eject`
+The recipe card shows all ingredients with measurements along with detailed instructions. There are also optional links for a video walkthrough or a source. If the recipe doesn't have one or both of these, the buttons will not appear.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![alt text](Images/CCRecipeModal1.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![alt text](Images/CCRecipeModal2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Wireframe
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Take a peak below to see where the magic began! You can see where I started and some peeks at what's coming next!
 
-## Learn More
+![alt text](Images/CCMainPageWireFrame.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![alt text](Images/CCRecipeModalWireframe.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##### Coming Soon!
 
-### Code Splitting
+Soon you will be able to add your own recipes to the collection so anyone can learn to make your favorite recipes!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![alt text](Images/CCAddRecipeModalWireframe.png)
 
-### Analyzing the Bundle Size
+### Post MVP Goals
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<li>User profiles </li>
+<li>Add your own recipes</li>
+<li>Edit/Delete Recipes you have posted</li>
+<li>Follow and chat with other contributors</li>
 
-### Making a Progressive Web App
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Take a look <a href="https://github.com/geclower/CookingCollective-Backend">HERE</a> for the backend!
 
-### Advanced Configuration
+In the above linked README, you can find more on my ERD, Routes, and Installation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Tech Stack
 
-### Deployment
+**Client:** React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Languages:** JavaScript, HTML, CSS
 
-### `npm run build` fails to minify
+### Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<ul>
+    <li><a href="https://whimsical.com/">Whimsical</a></li>
+    <li><a href="https://www.npmjs.com/package/react-modal?activeTab=readme">React-Modal</a></li>
+    <li><a href="https://www.themealdb.com/api.php">TheMealDB</a></li>
+    <li><a href="https://getcssscan.com/css-buttons-examples">Button Inspirations</a></li>
+
+</ul>
